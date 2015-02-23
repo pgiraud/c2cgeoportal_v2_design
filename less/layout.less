@@ -1,0 +1,45 @@
+@data-width: 320px;
+@topbar-height: 50px;
+
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  padding-top: @topbar-height;
+}
+
+header {
+}
+  /*position: relative;*/
+
+#main-container {
+  height: 100%;
+  position: relative;
+  background-color: #dfca99;
+}
+
+#map {
+  width: auto;
+  height: 100%;
+  background-color: #aaffcc;
+}
+
+#data {
+  display: block;
+  width: @data-width;
+  float: left;
+  height: 100%;
+  position: relative;
+  background-color: #dfdfdf;
+}
+
+#tools {
+  display: block;
+  float: right;
+  height: 100%;
+  position: relative;
+  background-color: blue;
+}

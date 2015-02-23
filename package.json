@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
+    "bootstrap": "^3.3.2",
     "less": "^2.4.0",
     "live-server": "^0.6.4"
   }
