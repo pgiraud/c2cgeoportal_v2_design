@@ -1,5 +1,7 @@
 @data-width: 320px;
-@topbar-height: 50px;
+/* size of the links bar */
+@topbar-height: 20px;
+@logo-height: 57px;
 
 
 html, body {
@@ -12,19 +14,67 @@ body {
 }
 
 header {
+  padding: 0;
+  margin-bottom: 0;
+  &.navbar {
+    min-height: 20px;
+    border: 0;
+  }
+
+  > div:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: @logo-height;
+  }
+
+  .logo {
+    float: left;
+    img {
+      height: @logo-height;
+    }
+    width: @data-width;
+    background-color: white;
+  }
+  .search-bar {
+    padding: 10px;
+    margin-left: @data-width;
+  }
+  .search {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+    .gmf-icon-search {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+    }
+    input {
+      text-indent: 16px;
+    }
+  }
 }
+
+
+@media (min-width: 768px) {
+  .search .form-control {
+    width: 350px;
+  }
+}
+
+
   /*position: relative;*/
 
 #main-container {
-  height: 100%;
   position: relative;
-  background-color: #dfca99;
+  height: 100%;
+  background-color: #f9f9f9;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAAAAABzHgM7AAAAAnRSTlMAAHaTzTgAAAARSURBVHgBY3iKBFEAOp/+MgB+UQnYeBZPWAAAAABJRU5ErkJggg==');
 }
 
 #map {
   width: auto;
   height: 100%;
-  background-color: #aaffcc;
+  overflow: hidden;
+  position: relative;
 }
 
 #data {
@@ -33,13 +83,18 @@ header {
   float: left;
   height: 100%;
   position: relative;
-  background-color: #dfdfdf;
+  background-color: red;
 }
 
 #tools {
   display: block;
   float: right;
-  height: 100%;
   position: relative;
-  background-color: blue;
+  background-color: #bbffaa;
+}
+#data,
+#tools {
+  height: ~"calc(100% - @{logo-height})";
+  background-color: #B1C2B5;
+  margin-top: @logo-height;
 }
