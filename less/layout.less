@@ -1,7 +1,7 @@
 @data-width: 320px;
 /* size of the links bar */
 @topbar-height: 20px;
-@logo-height: 57px;
+@logo-height: 42px;
 
 
 html, body {
@@ -32,7 +32,7 @@ header {
   }
 
   > div:nth-child(2) {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(240, 240, 240, 0.7);
     height: @logo-height;
     margin-top: @topbar-height;
   }
@@ -46,7 +46,8 @@ header {
     background-color: white;
   }
   .search-bar {
-    padding: 10px;
+    padding-left: 10px;
+    line-height: @logo-height;
     margin-left: @data-width;
   }
   .search {
@@ -55,7 +56,6 @@ header {
     margin-left: 40px;
     .gmf-icon-search {
       position: absolute;
-      top: 6px;
       left: 6px;
     }
     input {
