@@ -88,15 +88,15 @@
         <br>
       </div>
       <div id="tools" class="btn-group-vertical">
-        <button class="btn btn-default gmf-icon gmf-icon-print"></button>
-        <button class="btn btn-default gmf-icon gmf-icon-share"></button>
-        <button class="btn btn-default gmf-icon gmf-icon-legend active"></button>
-        <button class="btn btn-default gmf-icon gmf-icon-draw"></button>
-        <button class="btn btn-default gmf-icon gmf-icon-measure"></button>
-        <button class="btn btn-default gmf-icon gmf-icon-help"></button>
+        <button class="btn btn-default gmf-icon gmf-icon-print" data-toggle="print"></button>
+        <button class="btn btn-default gmf-icon gmf-icon-share" data-toggle="share"></button>
+        <button class="btn btn-default gmf-icon gmf-icon-legend" data-toggle="legend"></button>
+        <button class="btn btn-default gmf-icon gmf-icon-draw" data-toggle="draw"></button>
+        <button class="btn btn-default gmf-icon gmf-icon-measure" data-toggle="measure"></button>
+        <button class="btn btn-default gmf-icon gmf-icon-help" data-toggle="help"></button>
       </div>
-      <div id="tools-content" class="active">
-        <div id="print panel panel-default">
+      <div id="tools-content">
+        <div id="print">
           <div class="panel-heading">Imprimer la carte</div>
           <div class="panel-body form">
             <fieldset>
@@ -134,8 +134,26 @@
             </fieldset>
           </div>
         </div>
+        <div id="share">
+          <div class="panel-heading">share</div>
+        </div>
+        <div id="legend">
+          <div class="panel-heading">legend</div>
+        </div>
+        <div id="draw">
+          <div class="panel-heading">draw</div>
+        </div>
+        <div id="measure">
+          <div class="panel-heading">measure</div>
+        </div>
+        <div id="help">
+          <div class="panel-heading">help</div>
+        </div>
+        <button class="collapse btn btn-default btn-xs gmf-icon gmf-icon-collapse"></button>
       </div>
       <div id="map">
+        <div id="bgmap1" class="bgmap"></div>
+        <div id="bgmap2" class="bgmap"></div>
       </div>
     </div>
     <script src="index.js"></script>

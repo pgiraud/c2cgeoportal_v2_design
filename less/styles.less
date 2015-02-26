@@ -20,6 +20,12 @@ header {
 }
 
 #tools-content {
+  > div {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
   .panel-heading {
     color: @gray-light;
     border-bottom: 1px solid @gray-light;

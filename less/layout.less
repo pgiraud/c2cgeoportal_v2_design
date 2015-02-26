@@ -87,6 +87,21 @@ header {
   position: relative;
 }
 
+.bgmap {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  z-index: 2;
+  position: absolute;
+  top: ~"calc(@{logo-height} + 10px)";
+}
+#bgmap1 {
+  left: 40px;
+}
+#bgmap2 {
+  left: 110px;
+}
+
 #data {
   display: block;
   width: @data-width;
@@ -126,4 +141,13 @@ header {
 #tools-content {
   height: 100%;
   padding-top: @logo-height;
+  position: relative;
+
+  .collapse {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
 }
