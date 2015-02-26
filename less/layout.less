@@ -77,7 +77,6 @@ header {
 #main-container {
   position: relative;
   height: 100%;
-  background-color: #f9f9f9;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAAAAABzHgM7AAAAAnRSTlMAAHaTzTgAAAARSURBVHgBY3iKBFEAOp/+MgB+UQnYeBZPWAAAAABJRU5ErkJggg==');
 }
 
@@ -94,18 +93,37 @@ header {
   float: left;
   height: 100%;
   position: relative;
-  background-color: red;
+  background-color: @brand-primary;
 }
 
 #tools {
   display: block;
   float: right;
   position: relative;
-  background-color: #bbffaa;
+  background-color: @brand-primary;
+  border-left: 1px solid @btn-default-border;
+}
+#tools-content {
+  display: none;
+  float: right;
+  background-color: @brand-secondary;
+  padding: 10px;
+  width: 200px;
+
+  .checkbox {
+    margin-top: 5px;
+  }
+  .checkbox,
+  .form-group {
+    margin-bottom: 5px;
+  }
+}
+#tools-content.active {
+  display: block;
 }
 #data,
-#tools {
-  height: ~"calc(100% - @{logo-height})";
-  background-color: #B1C2B5;
-  margin-top: @logo-height;
+#tools,
+#tools-content {
+  height: 100%;
+  padding-top: @logo-height;
 }

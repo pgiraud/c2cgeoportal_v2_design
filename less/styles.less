@@ -10,9 +10,38 @@ header {
     background-color: transparent;
     border-right-width: 0;
     border-left-width: 0;
+    &.active {
+      background-color: @brand-secondary;
+      border-left: 1px solid @brand-secondary;
+      margin-left: -1px;
+      .box-shadow(none);
+    }
+  }
+}
+
+#tools-content {
+  .panel-heading {
+    color: @gray-light;
+    border-bottom: 1px solid @gray-light;
+    margin: 5px 0;
+  }
+  .form-control {
+    border: none;
+    background-color: @brand-primary;
+    .placeholder(darken(@input-color-placeholder, 10%));
+    color: darken(@input-color, 10%);
   }
 }
 
 .search .gmf-icon {
-  color: grey;
+  color: @input-color-placeholder;
+}
+
+fieldset {
+  padding-bottom: 10px;
+  legend {
+    margin-bottom: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
 }

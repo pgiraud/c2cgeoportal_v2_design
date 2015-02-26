@@ -90,10 +90,50 @@
       <div id="tools" class="btn-group-vertical">
         <button class="btn btn-default gmf-icon gmf-icon-print"></button>
         <button class="btn btn-default gmf-icon gmf-icon-share"></button>
-        <button class="btn btn-default gmf-icon gmf-icon-legend"></button>
+        <button class="btn btn-default gmf-icon gmf-icon-legend active"></button>
         <button class="btn btn-default gmf-icon gmf-icon-draw"></button>
         <button class="btn btn-default gmf-icon gmf-icon-measure"></button>
         <button class="btn btn-default gmf-icon gmf-icon-help"></button>
+      </div>
+      <div id="tools-content" class="active">
+        <div id="print panel panel-default">
+          <div class="panel-heading">Imprimer la carte</div>
+          <div class="panel-body form">
+            <fieldset>
+              <legend>Personnaliser:</legend>
+              <div class="form-group">
+                <input type="text" placeholder="Ajouter un titre"
+                       class="form-control input-sm" />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Ajouter un commentaire"
+                          class="form-control input-sm" rows="4"></textarea>
+              </div>
+              <div class="checkbox input-sm">
+                <label>
+                  <input type="checkbox"> Inclure la légende
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Transformer:</legend>
+              <div class="form-group">
+                <select class="form-control input-sm">
+                  <option value="" >Format A4 portrait</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Sortie:</legend>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-default btn-sm">Enregistrer en image</button>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-default btn-sm">Imprimer</button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
       </div>
       <div id="map">
       </div>
