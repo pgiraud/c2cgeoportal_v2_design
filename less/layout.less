@@ -104,11 +104,20 @@ header {
 
 #data {
   display: block;
-  width: @data-width;
   float: left;
   height: 100%;
   position: relative;
   background-color: @brand-primary;
+  width: 40px;
+  .body {
+    display: none;
+  }
+}
+#data.active {
+  width: @data-width;
+  .body {
+    display: block;
+  }
 }
 
 #data .body {

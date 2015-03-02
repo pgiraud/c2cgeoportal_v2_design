@@ -67,3 +67,7 @@ $('#tools-content .collapse').on('click', function() {
   tools.removeClass('active');
   map.updateSize();
 });
+
+$('#data .gmf-icon-layers').on('click', function() {
+  $('#data').toggleClass('active');
+});
