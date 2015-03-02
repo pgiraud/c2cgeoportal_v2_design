@@ -10,10 +10,17 @@ header {
   .tree {
     background-color: @brand-primary;
   }
-  .btn {
+  .btn.themes {
     background-color: white;
   }
+  .btn {
+    background: transparent;
+  }
+  > ul > li >  ul {
+    border-bottom: 1px solid @gray-light;
+  }
   ul {
+    padding-left: 0;
     list-style-type: none;
     > li > span {
       font-weight: bold;
