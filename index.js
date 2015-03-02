@@ -58,6 +58,7 @@ tools.each(function() {
     }
     $('#tools-content').toggleClass('active', $(this).hasClass('active'));
     $('#' + $(this).attr('data-toggle')).addClass('active');
+    map.updateSize();
   });
 });
 
