@@ -42,50 +42,68 @@
     </header>
     <div id="main-container">
       <div id="data">
-        <div class="dropdown theme-selector">
-          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Thème
-            <span class="caret"></span>
-          </button>
-          <div class="dropdown-menu">
-            <div class="thumb-wrap">
-              <div class="thumb">
-                <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/planville.png">
+        <span class="btn btn-lg gmf-icon gmf-icon-layers"></span>
+        <div class="body">
+          <div class="dropdown theme-selector">
+            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    class="btn btn-block">
+              Thème : <b>Cadastre</b>
+              <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+              <div class="thumb-wrap">
+                <div class="thumb">
+                  <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/planville.png">
+                </div>
+                <div class="thumb-label">Plan de ville</div>
               </div>
-              <div class="thumb-label">Plan de ville</div>
-            </div>
-            <div class="thumb-wrap">
-              <div class="thumb">
-                <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/cadastre.png">
+              <div class="thumb-wrap">
+                <div class="thumb">
+                  <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/cadastre.png">
+                </div>
+                <div class="thumb-label">Cadastre</div>
               </div>
-              <div class="thumb-label">Cadastre</div>
-            </div>
-            <div class="thumb-wrap">
-              <div class="thumb">
-                <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/amenagement.png">
+              <div class="thumb-wrap">
+                <div class="thumb">
+                  <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/amenagement.png">
+                </div>
+                <div class="thumb-label">Aménagement</div>
               </div>
-              <div class="thumb-label">Aménagement</div>
-            </div>
-            <div class="thumb-wrap">
-              <div class="thumb">
-                <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/environnement.png">
+              <div class="thumb-wrap">
+                <div class="thumb">
+                  <img src="http://sitn.ne.ch/production/wsgi/proj/images/themes/environnement.png">
+                </div>
+                <div class="thumb-label">Environnement</div>
               </div>
-              <div class="thumb-label">Environnement</div>
             </div>
           </div>
+          <ul class="tree">
+            <li>
+              Données générales
+              <ul>
+                <li>Conduites de transport</li>
+                <li>Adresses</li>
+                <li>Communes</li>
+              </ul>
+            </li>
+            <li>
+              Mensuration officielle
+              <ul>
+                <li>Points cadastraux
+                  <ul>
+                    <li>Points fixes planimétriques PFP 1 et 2</li>
+                    <li>Points fixes altimétriques PFA 1</li>
+                    <li>Points fixes planimétriques PFP 3</li>
+                  </ul>
+                </li>
+                <li>Objets divers</li>
+                  <ul>
+                    <li>Bâtiments souterrains < 15m²</li>
+                  </ul>
+              </ul>
+            </li>
+          </ul>
         </div>
-        the left bar
-        <br>
-        something
-        <br>
-        something
-        <br>
-        something
-        <br>
-        something
-        <br>
-        something
-        <br>
       </div>
       <div id="tools" class="btn-group-vertical">
         <button class="btn btn-default gmf-icon gmf-icon-print" data-toggle="print"></button>
