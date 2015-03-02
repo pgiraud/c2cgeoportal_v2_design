@@ -65,4 +65,5 @@ tools.each(function() {
 $('#tools-content .collapse').on('click', function() {
   $('#tools-content').removeClass('active');
   tools.removeClass('active');
+  map.updateSize();
 });
