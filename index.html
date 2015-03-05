@@ -41,13 +41,14 @@
       </div>
     </header>
     <div id="main-container">
-      <div id="data" class="active">
-        <span class="btn gmf-icon gmf-icon-layers"></span>
-        <div class="body">
-          <div class="dropdown theme-selector">
+      <div class="data-panel active">
+        <div class="header">
+          <span class="btn btn-default gmf-icon gmf-icon-layers"></span>
+          Thème : <b>Cadastre</b>
+          <div class="dropdown theme-selector pull-right">
             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     class="btn btn-block themes">
-              Thème : <b>Cadastre</b>
+              Changer
               <span class="caret"></span>
             </button>
             <div class="dropdown-menu">
@@ -77,6 +78,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="body">
           <ul class="tree">
             <li>
               <input type="checkbox" />
@@ -99,6 +102,7 @@
               <ul>
                 <li>
                   <input type="checkbox" class=""/>
+                  <img src="http://sitn.ne.ch/production/wsgi/proj/images/layers/conduites.png" />
                   Conduites de transport
                 </li>
                 <li>
@@ -157,6 +161,9 @@
               </ul>
             </li>
           </ul>
+        </div>
+        <div class="footer">
+          <button class="btn btn-xs btn-default pull-right">actions</button>
         </div>
       </div>
       <div id="tools" class="btn-group-vertical">

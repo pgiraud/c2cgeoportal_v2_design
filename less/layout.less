@@ -2,6 +2,8 @@
 /* size of the links bar */
 @topbar-height: 20px;
 @logo-height: 42px;
+@data-header-height: 40px;
+@data-footer-height: 30px;
 
 
 html, body {
@@ -102,7 +104,7 @@ header {
   left: 70px;
 }
 
-#data {
+.data-panel {
   display: block;
   float: left;
   height: 100%;
@@ -112,16 +114,34 @@ header {
   .body {
     display: none;
   }
+  .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 }
-#data.active {
+.data-panel.active {
   width: @data-width;
   .body {
     display: block;
   }
 }
 
-#data .body {
+.data-panel .header {
+  height: @data-header-height;
+  padding: 5px;
+}
+.theme-selector .btn {
+  position: relative;
+}
+.data-panel .body {
   padding: 10px;
+  height: ~"calc(100% - @{data-header-height} - @{data-footer-height})";
+  overflow: auto;
+}
+.data-panel .footer {
+  height: @data-footer-height;
+  padding: 5px;
 }
 
 #tools {
@@ -149,7 +169,7 @@ header {
 #tools-content.active {
   display: block;
 }
-#data,
+.data-panel,
 #tools,
 #tools-content {
   height: 100%;

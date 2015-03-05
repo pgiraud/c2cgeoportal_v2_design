@@ -5,13 +5,25 @@ header {
   .box-shadow(0px 2px 6px -1px rgba(0, 0, 0, 0.5));
 }
 
-#data .body {
+.data-panel {
+  /*background-color: @brand-secondary;*/
+  background-color: @brand-primary;
+}
+.data-panel .header,
+.data-panel .footer {
+}
+
+.theme-selector {
+  display: inline-block;
+  .btn {
+    background-color: white;
+  }
+}
+
+.data-panel .body {
   background-color: @brand-secondary;
   .tree {
     background-color: @brand-primary;
-  }
-  .btn.themes {
-    background-color: white;
   }
   .btn {
     background: transparent;

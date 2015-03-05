@@ -68,6 +68,6 @@ $('#tools-content .collapse').on('click', function() {
   map.updateSize();
 });
 
-$('#data .gmf-icon-layers').on('click', function() {
-  $('#data').toggleClass('active');
+$('.data-panel .gmf-icon-layers').on('click', function() {
+  $('.data-panel').toggleClass('active');
 });
