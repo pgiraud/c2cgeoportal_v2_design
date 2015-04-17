@@ -5,7 +5,6 @@
 @data-header-height: 40px;
 @data-footer-height: 30px;
 
-
 html, body {
   position: relative;
   height: 100%;
@@ -13,6 +12,9 @@ html, body {
 
 body {
   padding-top: @topbar-height;
+  @media (max-width: @screen-md-max) {
+    padding-top: 0;
+  }
 }
 
 header {
@@ -23,9 +25,13 @@ header {
     border: 0;
   }
 
+
   > div:nth-child(1) {
     position: absolute;
     width: 100%;
+    @media (max-width: @screen-md-max) {
+      display: none;
+    }
   }
 
   .banner1 {
@@ -37,6 +43,9 @@ header {
     background-color: rgba(240, 240, 240, 0.7);
     height: @logo-height;
     margin-top: @topbar-height;
+    @media (max-width: @screen-md-max) {
+      margin-top: 0;
+    }
   }
 
   .logo {
@@ -44,8 +53,10 @@ header {
     img {
       height: @logo-height;
     }
-    width: @data-width;
-    background-color: white;
+    @media (min-width: @screen-md-max) {
+      width: @data-width;
+      background-color: white;
+    }
   }
   .search-bar {
     padding-left: 10px;
@@ -62,13 +73,36 @@ header {
     input {
       text-indent: 16px;
     }
+
   }
 }
 
+.search .form-control {
+  width: 350px;
+}
 
-@media (min-width: 768px) {
-  .search .form-control {
+@media (max-width: @screen-md-max) {
+  header {
+    min-height: 0 !important;
+    height: 0;
+    > div:nth-child(2) {
+      height: 0;
+    }
+  }
+  .logo {
+    display: none;
+  }
+  .search-bar {
+    margin-left: auto !important;
+    margin-right: auto !important;
     width: 350px;
+  }
+  .login,
+  .locate {
+    display: none;
+  }
+  .data-panel {
+    display: none !important;
   }
 }
 
@@ -149,6 +183,9 @@ header {
   position: relative;
   background-color: @brand-primary;
   border-left: 1px solid @btn-default-border;
+  @media (max-width: @screen-md-max) {
+    display: none;
+  }
 }
 #tools-content {
   display: none;
