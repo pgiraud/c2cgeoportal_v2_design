@@ -33,18 +33,21 @@ var map = new ol.Map({
   }),
   target: 'map',
   view: new ol.View({
-    center: ol.proj.transform([5, 45], 'EPSG:4326', 'EPSG:3857')
   })
 });
 
-bgmap1.getView().bindTo('center', map.getView());
-bgmap2.getView().bindTo('center', map.getView());
+map.getView().on('change:center', function() {
+  bgmap1.getView().setCenter(map.getView().getCenter());
+  bgmap2.getView().setCenter(map.getView().getCenter());
+});
 map.getView().on('change:resolution', function(evt) {
   bgmap1.getView().setResolution(map.getView().getResolution() * 8);
   bgmap2.getView().setResolution(map.getView().getResolution() * 8);
 });
 
 map.getView().setZoom(6);
+var center = ol.proj.transform([5, 45], 'EPSG:4326', 'EPSG:3857');
+map.getView().setCenter(center);
 
 
 var tools = $('#tools').children();
