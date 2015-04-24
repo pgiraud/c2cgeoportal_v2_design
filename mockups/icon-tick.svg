@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="13.343749"
+   height="11.59375"
+   viewBox="0 0 13.343749 11.593751"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="icon-tick.svg"
+   inkscape:export-filename="/home/pierre/clients/c2cgeoportal/v2/check_out_of_scale.png"
+   inkscape:export-xdpi="107.92"
+   inkscape:export-ydpi="107.92">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>icon 2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1136"
+     inkscape:window-height="712"
+     id="namedview10"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:zoom="11.512195"
+     inkscape:cx="-3.3362443"
+     inkscape:cy="5.1808232"
+     inkscape:window-x="176"
+     inkscape:window-y="299"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <title
+     id="title4">icon 2</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <path
+     d="M 3.5572829,4.227238 1.6930669,6.108754 5.4214989,9.8715859 11.635552,3.600265 9.7713355,1.71875 5.4214989,6.108754 3.5572829,4.227238 z"
+     sketch:type="MSShapeGroup"
+     id="path8"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#444444;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     inkscape:connector-curvature="0"
+     inkscape:export-filename="/home/pierre/clients/c2cgeoportal/v2/check_out_of_scale.png"
+     inkscape:export-xdpi="126.59"
+     inkscape:export-ydpi="126.59" />
+  <rect
+     style="opacity:0.5;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     id="rect3759"
+     width="11.726694"
+     height="9.9894066"
+     x="0.84057134"
+     y="0.72430813"
+     inkscape:export-filename="/home/pierre/clients/c2cgeoportal/v2/check_unchecked.png"
+     inkscape:export-xdpi="126.59"
+     inkscape:export-ydpi="126.59" />
+</svg>
